@@ -8,18 +8,19 @@
 
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<static.repo.path>${project.build.directory}/staging-repo</static.repo.path>
 	</properties>
 
 	<distributionManagement>
 		<repository>
-			<id>github</id>
-			<name>DataFlowAnalysisVendor GitHub Packages</name>
-			<url>https://maven.pkg.github.com/DataFlowAnalysis/DataFlowAnalysisVendor</url>
+			<id>dataflowanalysis</id>
+			<name>DataFlowAnalysis Maven Repository (Releases)</name>
+			<url>file://${static.repo.path}</url>
 		</repository>
 		<snapshotRepository>
-			<id>github</id>
-			<name>DataFlowAnalysisVendor GitHub Packages</name>
-			<url>https://maven.pkg.github.com/DataFlowAnalysis/DataFlowAnalysisVendor</url>
+			<id>dataflowanalysis</id>
+			<name>DataFlowAnalysis Maven Repository (Snapshots)</name>
+			<url>file://${static.repo.path}</url>
 		</snapshotRepository>
 	</distributionManagement>
 
