@@ -21,7 +21,6 @@
 			<id>dataflowanalysis</id>
 			<name>DataFlowAnalysis Maven Repository (Snapshots)</name>
 			<url>file://${static.repo.path}</url>
-			<uniqueVersion>false</uniqueVersion>
 		</snapshotRepository>
 	</distributionManagement>
 
