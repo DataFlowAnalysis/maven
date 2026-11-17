@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>org.dataflowanalysis.vendor</groupId>
+	<artifactId>parent</artifactId>
+	<version>1.0.0-SNAPSHOT</version>
+	<packaging>pom</packaging>
+
+	<properties>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<static.repo.path>${project.build.directory}/staging-repo</static.repo.path>
+	</properties>
+
+	<distributionManagement>
+		<repository>
+			<id>dataflowanalysis</id>
+			<name>DataFlowAnalysis Maven Repository (Releases)</name>
+			<url>file://${static.repo.path}</url>
+		</repository>
+		<snapshotRepository>
+			<id>dataflowanalysis</id>
+			<name>DataFlowAnalysis Maven Repository (Snapshots)</name>
+			<url>file://${static.repo.path}</url>
+			<uniqueVersion>false</uniqueVersion>
+		</snapshotRepository>
+	</distributionManagement>
+
+	<build>
+		<pluginManagement>
+			<plugins>
+				<plugin>
+					<groupId>org.codehaus.mojo</groupId>
+					<artifactId>build-helper-maven-plugin</artifactId>
+					<version>3.6.0</version>
+				</plugin>
+			</plugins>
+		</pluginManagement>
+	</build>
+
+	<modules>
+		<module>plugins/tools.mdsd.modelingfoundations.identifier</module>
+		<module>plugins/tools.mdsd.modelingfoundations.identifier.edit</module>
+		<module>plugins/org.eclipse.emf.edit.ui</module>
+		<module>plugins/org.eclipse.emf.cdo</module>
+		<module>plugins/org.eclipse.emf.cdo.common</module>
+		<module>plugins/org.eclipse.emf.common.ui</module>
+		<module>plugins/org.eclipse.net4j.util</module>
+		<module>plugins/tools.mdsd.ecoreworkflow.mwe2lib</module>
+		<module>plugins/tools.mdsd.library.standalone.initialization</module>
+		<module>plugins/tools.mdsd.library.standalone.initialization.log4j</module>
+
+		<module>plugins/de.uka.ipd.sdq.errorhandling.core</module>
+		<module>plugins/de.uka.ipd.sdq.identifier</module>
+		<module>plugins/de.uka.ipd.sdq.probfunction</module>
+		<module>plugins/de.uka.ipd.sdq.probfunction.math</module>
+		<module>plugins/de.uka.ipd.sdq.stoex</module>
+		<module>plugins/de.uka.ipd.sdq.stoex.analyser</module>
+		<module>plugins/de.uka.ipd.sdq.units</module>
+		<module>plugins/lpg.runtime.java</module>
+		<module>plugins/org.antlr.runtime</module>
+		<module>plugins/org.eclipse.emf</module>
+		<module>plugins/org.eclipse.ocl.common</module>
+		<module>plugins/org.eclipse.ocl</module>
+		<module>plugins/org.eclipse.ocl.ecore</module>
+		<module>plugins/org.eclipse.ocl.pivot</module>
+		<module>plugins/org.eclipse.uml2</module>
+		<module>plugins/org.eclipse.uml2.common</module>
+		<module>plugins/org.eclipse.xtend.standalone</module>
+		<module>plugins/org.palladiosimulator.commons</module>
+		<module>plugins/org.palladiosimulator.commons.stoex</module>
+		<module>plugins/org.palladiosimulator.pcm</module>
+		<module>plugins/org.dataflowanalysis.pcm.extension.dictionary</module>
+		<module>plugins/org.dataflowanalysis.pcm.extension.dictionary.characterized</module>
+		<module>plugins/org.dataflowanalysis.pcm.extension.dictionary.characterized.dsl</module>
+		<module>plugins/org.dataflowanalysis.pcm.extension.model</module>
+		<module>plugins/org.dataflowanalysis.pcm.extension.dddsl</module>
+		<module>plugins/org.dataflowanalysis.pcm.extension.nodecharacteristics</module>
+	</modules>
+</project>
