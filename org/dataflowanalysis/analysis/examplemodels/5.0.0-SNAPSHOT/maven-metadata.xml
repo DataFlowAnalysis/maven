@@ -3,21 +3,21 @@
   <groupId>org.dataflowanalysis.analysis</groupId>
   <artifactId>examplemodels</artifactId>
   <versioning>
-    <lastUpdated>20261119133940</lastUpdated>
+    <lastUpdated>20261119134833</lastUpdated>
     <snapshot>
-      <timestamp>20261119.133940</timestamp>
+      <timestamp>20261119.134833</timestamp>
       <buildNumber>1</buildNumber>
     </snapshot>
     <snapshotVersions>
       <snapshotVersion>
         <extension>pom</extension>
-        <value>5.0.0-20261119.133940-1</value>
-        <updated>20261119133940</updated>
+        <value>5.0.0-20261119.134833-1</value>
+        <updated>20261119134833</updated>
       </snapshotVersion>
       <snapshotVersion>
         <extension>jar</extension>
-        <value>5.0.0-20261119.133940-1</value>
-        <updated>20261119133940</updated>
+        <value>5.0.0-20261119.134833-1</value>
+        <updated>20261119134833</updated>
       </snapshotVersion>
     </snapshotVersions>
   </versioning>
